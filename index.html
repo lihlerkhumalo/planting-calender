@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crop Planting Calendar</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>🌱 Crop Planting Calendar</h1>
+    <p>Select a crop and region to see planting & harvesting times.</p>
+  </header>
+
+  <main>
+    <form id="calendarForm">
+      <label for="crop">Choose Crop:</label>
+      <select id="crop" required>
+        <option value="">--Select Crop--</option>
+        <option value="maize">Maize</option>
+        <option value="tomatoes">Tomatoes</option>
+        <option value="cassava">Cassava</option>
+      </select>
+
+      <label for="region">Choose Region:</label>
+      <select id="region" required>
+        <option value="">--Select Region--</option>
+        <option value="southern">Southern Africa</option>
+        <option value="east">East Africa</option>
+        <option value="west">West Africa</option>
+      </select>
+
+      <button type="submit">Show Calendar</button>
+    </form>
+
+    <section id="result"></section>
+  </main>
+
+  <footer>
+    <p>🌍 Built for African farmers : Offline friendly</p>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>
